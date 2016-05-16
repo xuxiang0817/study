@@ -21,6 +21,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>study-rpc</module>
+		<module>study-thread</module>
 	</modules>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}</name>
