@@ -14,28 +14,42 @@
  - limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.taobao</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.3</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.xuxiang</groupId>
-	<artifactId>study-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<modules>
-		<module>study-rpc</module>
-		<module>study-thread</module>
-	</modules>
-	<packaging>pom</packaging>
-	<name>${project.artifactId}</name>
-	<description>The parent project of study</description>
-	<inceptionYear>2015</inceptionYear>
-	<developers>
-		<developer>
-			<name>XuXiang</name>
-			<id>siyi.xx</id>
-			<email>siyi.xx  (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-	</developers>
+    <artifactId>study-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>study-rpc</module>
+        <module>study-thread</module>
+    </modules>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>The parent project of study</description>
+    <inceptionYear>2015</inceptionYear>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba.middleware</groupId>
+                <artifactId>sdk</artifactId>
+                <scope>provided</scope>
+                <version>2_17_170922</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alimusic.lib</groupId>
+                <artifactId>music-util</artifactId>
+                <optional>true</optional>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
