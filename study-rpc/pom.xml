@@ -29,12 +29,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.middleware</groupId>
-            <artifactId>sdk</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.8</version>

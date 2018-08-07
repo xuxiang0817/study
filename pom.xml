@@ -39,19 +39,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.alibaba.middleware</groupId>
-                <artifactId>sdk</artifactId>
-                <scope>provided</scope>
-                <version>2_17_170922</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alimusic.lib</groupId>
-                <artifactId>music-util</artifactId>
-                <optional>true</optional>
-            </dependency>
-
-            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.16.8</version>
